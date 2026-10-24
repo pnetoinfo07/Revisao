@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Revisao.Dominio;
+using Revisao.Infraestrutura;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,11 +37,12 @@ namespace Revisao
                 Console.WriteLine("Deseja adicionar mais questões? Digite sim ou nao?");
                 resposta = Console.ReadLine();
             }
-            BancoDados.Add(prova);
+            ProvaRepository.Adicionar(prova);
         }
         public static void ListarProvas()
         {
-            foreach (Prova item in BancoDados)
+            List<Prova> list = ProvaRepository.Listar();
+            foreach (Prova item in list)
             {
                 item.ExibirDados();
             }

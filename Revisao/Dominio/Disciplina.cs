@@ -1,4 +1,4 @@
-﻿namespace Revisao
+﻿namespace Revisao.Dominio
 {
     public class Disciplina
     {
