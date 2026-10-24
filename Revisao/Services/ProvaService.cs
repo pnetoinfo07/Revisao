@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Revisao
+namespace Revisao.Services
 {
     public static class ProvaService
     {

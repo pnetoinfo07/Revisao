@@ -1,5 +1,5 @@
-﻿using Revisao;
-using Revisao.Infraestrutura;
+﻿using Revisao.Infraestrutura;
+using Revisao.Services;
 ProvaRepository.Inicializar();
 int opcao = 0;
 while (opcao != -1)
